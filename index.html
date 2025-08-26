@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anand Kumar — Portfolio</title>
+  <meta name="description" content="Portfolio of Anand Kumar — Full-Stack Developer & Graphic Designer." />
+  <meta name="theme-color" content="#0b1220" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header (fixed) -->
+  <header id="siteHeader">
+    <div class="container nav" role="navigation" aria-label="Main">
+      <a href="#about" class="brand-link" aria-label="Go to About">
+        <span class="brand"><span class="logo" aria-hidden="true">AK</span> Anand Kumar</span>
+      </a>
+      <div class="actions">
+        <!-- Toggle ALWAYS visible -->
+        <button class="header-btn" id="themeToggle" aria-label="Toggle theme">🌓 Theme</button>
+        <a class="header-btn" href="./Anand_Kumar_Resume.pdf" download>Download Resume</a>
+
+        <nav class="menu" aria-label="Primary">
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- Spacer to offset fixed header -->
+  <div class="header-spacer" id="headerSpacer"></div>
+
+  <!-- Hero -->
+  <main class="hero container" id="home">
+    <section class="card reveal" aria-labelledby="intro-title">
+      <h1 id="intro-title">Hi, I'm Anand — <span class="muted"><span id="typed" aria-live="polite" aria-atomic="true">Full-Stack Developer</span></span> ✨</h1>
+      <p class="muted">Full-Stack Developer | Graphic Designer | Software Developer</p>
+      <div class="hero__badges" aria-label="Highlights">
+        <span class="badge">HTML</span><span class="badge">CSS</span><span class="badge">JavaScript</span>
+        <span class="badge">Bootstrap</span><span class="badge">PHP</span><span class="badge">Python</span>
+        <span class="badge">Java</span><span class="badge">C</span><span class="badge">C++</span>
+        <span class="badge">Graphic Design</span>
+      </div>
+    </section>
+  </main>
+
+  <!-- Projects -->
+  <section id="projects" class="container">
+    <h2>Projects</h2>
+    <div class="projects" role="list">
+      <article class="project card reveal" role="listitem" tabindex="0">
+        <div class="thumb" aria-hidden="true">Todo App</div>
+        <div><strong>Todo App</strong><p class="muted">Task manager with local storage.</p></div>
+        <div class="links">
+          <a class="btn primary" href="https://USERNAME.github.io/todo-app/" target="_blank" rel="noreferrer">Live Demo</a>
+          <a class="btn" href="https://github.com/USERNAME/todo-app" target="_blank" rel="noreferrer">Source Code</a>
+        </div>
+      </article>
+
+      <article class="project card reveal" role="listitem" tabindex="0">
+        <div class="thumb" aria-hidden="true">Weather</div>
+        <div><strong>Weather Widget</strong><p class="muted">Minimal weather UI with API.</p></div>
+        <div class="links">
+          <a class="btn primary" href="https://USERNAME.github.io/weather-app/" target="_blank" rel="noreferrer">Live Demo</a>
+          <a class="btn" href="https://github.com/USERNAME/weather-app" target="_blank" rel="noreferrer">Source Code</a>
+        </div>
+      </article>
+
+      <article class="project card reveal" role="listitem" tabindex="0">
+        <div class="thumb" aria-hidden="true">Calculator</div>
+        <div><strong>Calculator</strong><p class="muted">Responsive calculator with keyboard support.</p></div>
+        <div class="links">
+          <a class="btn primary" href="https://USERNAME.github.io/calculator-js/" target="_blank" rel="noreferrer">Live Demo</a>
+          <a class="btn" href="https://github.com/USERNAME/calculator-js" target="_blank" rel="noreferrer">Source Code</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="container">
+    <h2>Skills</h2>
+    <div class="skills" aria-label="Skills list">
+      <span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">JavaScript</span>
+      <span class="chip">Bootstrap</span><span class="chip">PHP</span><span class="chip">Python</span>
+      <span class="chip">Java</span><span class="chip">C</span><span class="chip">C++</span>
+      <span class="chip">Git & GitHub</span><span class="chip">Graphic Design</span><span class="chip">UI/UX</span>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="container">
+    <h2>About</h2>
+    <div class="timeline">
+      <div class="item reveal">
+        <strong>Summary</strong>
+        <p class="muted">
+          I am a skilled developer with expertise in backend development using PHP and Python, along with programming in
+          Java, C, and C++. I also specialize in frontend development using HTML, CSS, JavaScript, and Bootstrap.
+          Additionally, I have experience in graphic design, crafting visually appealing UI/UX elements and branding materials.
+          Passionate about problem-solving, I strive to deliver efficient and innovative digital solutions.
+        </p>
+      </div>
+      <div class="item reveal">
+        <strong>Education</strong>
+        <p class="muted">
+          10th — National Public School (CBSE), Narela (2020)<br>
+          12th — Kendriya Vidyalaya AFS Bawana (2022)<br>
+          Master's Diploma in Computer Engineering — IICS<br>
+          BCA — IGNOU (2023–2025)
+        </p>
+      </div>
+      <div class="item reveal">
+        <strong>Languages</strong>
+        <p class="muted">Hindi, English</p>
+      </div>
+      <div class="item reveal">
+        <strong>Address</strong>
+        <p class="muted">Gali no. 7, Sanjay Colony, Safiabad Road, Narela, Delhi</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="container">
+    <h2>Contact</h2>
+    <div class="contact__grid">
+      <!-- mailto form (no backend) -->
+      <div class="card reveal">
+        <h3>Let's work together</h3>
+        <p class="muted">This form uses <em>mailto:</em> so your message goes straight to my inbox.</p>
+        <form id="contactForm" action="https://formspree.io/f/xblajoqp" method="POST">
+          <label class="sr-only" for="name">Name</label>
+          <input id="name" name="name" placeholder="Your name" required>
+
+          <label class="sr-only" for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="Your email" required>
+
+          <label class="sr-only" for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Project / role / query" required></textarea>
+
+          <input type="hidden" name="_subject" value="New message — Anand Portfolio" />
+          <!-- debug ke liye pehle honeypot skip rakho; baad me add kar sakte ho -->
+          <!-- <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" /> -->
+
+          <button class="btn primary" type="submit" id="submitBtn">Send Message</button>
+          <p id="formStatus" class="muted" style="margin-top:8px;"></p>
+        </form>
+      </div>
+
+      <!-- quick links -->
+      <aside class="card reveal">
+        <h3>Elsewhere</h3>
+        <p class="muted">Find me here:</p>
+        <p>🐙 <a href="https://github.com/USERNAME" target="_blank" rel="noreferrer">GitHub</a></p>
+        <p>💼 <a href="https://linkedin.com/in/YOUR-HANDLE" target="_blank" rel="noreferrer">LinkedIn</a></p>
+        <p>✉️ <a href="mailto:18anand11@gmail.com">18anand11@gmail.com</a></p>
+        <p>📞 <a href="tel:+919311734991">+91 9311734991</a></p>
+      </aside>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">© <span id="year"></span> Anand Kumar. Crafted with ♥.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
