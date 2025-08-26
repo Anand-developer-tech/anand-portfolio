@@ -148,10 +148,9 @@ header.scrolled {
 
 .actions {
     display: flex;
-    gap: 10px;
+    gap: 8px;
     align-items: center;
     flex-wrap: wrap;
-    min-width:0;
 }
 
 .header-btn {
@@ -169,7 +168,6 @@ header.scrolled {
   height:38px;
   box-shadow:var(--shadow);
   transition:transform .15s ease, box-shadow .15s ease;
-  white-space: nowrap;   /* ✅ text break nahi hoga */
 }
 
 .header-btn:hover {
@@ -198,17 +196,6 @@ header.scrolled {
     background: linear-gradient(135deg, var(--brand), var(--brand-2));
     color: #fff;
     border: none
-}
-
-.toggle-mobile {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 8px 12px;
-    border-radius: 999px;
-    border: var(--outline);
-    background: color-mix(in oklab, var(--panel) 88%, transparent);
-    color: var(--text)
 }
 
 .header-spacer {
@@ -415,12 +402,6 @@ footer {
         font-size: 13px;
         height: 34px;
     }
-    .actions{
-        flex-wrap:wrap;
-        row-gap: 8px;
-        justify-content:flex-end;
-        min-width:0;
-    }
 }
 
 @media(prefers-reduced-motion:reduce) {
@@ -434,6 +415,3 @@ footer {
     }
 
 }
-
-
-
