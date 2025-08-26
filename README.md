@@ -4,7 +4,7 @@
 This repo hosts my **personal portfolio website**.
 
 ## 🚀 Live Portfolio
-👉 [View Live](https://USERNAME.github.io/anand-portfolio/)
+👉 [View Live](https://anand-developer-tech.github.io/anand-portfolio/)
 
 ## 🌟 Skills
 - HTML, CSS, JavaScript
