@@ -164,13 +164,14 @@ header.scrolled {
   color:var(--text);
   font-size:14px;
   min-width:44px;
-  height:38px;             /* ✅ sabka same height */
+  height:38px;
   box-shadow:var(--shadow);
   transition:transform .15s ease, box-shadow .15s ease;
+  white-space: nowrap;   /* ✅ text break nahi hoga */
 }
 
-.header-btn:hover{
-    transform: translateY(-2px);
+.header-btn:hover {
+  transform:translateY(-2px);
 }
 
 /* toggle holder (always visible) */
@@ -423,4 +424,5 @@ footer {
         opacity: 1;
         transform: none
     }
+
 }
