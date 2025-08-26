@@ -149,8 +149,9 @@ header.scrolled {
 .actions {
     display: flex;
     gap: 10px;
-    align-items: center
+    align-items: center;
     flex-wrap: wrap;
+    min-width:0;
 }
 
 .header-btn {
@@ -414,6 +415,12 @@ footer {
         font-size: 13px;
         height: 34px;
     }
+    .actions{
+        flex-wrap:wrap;
+        row-gap: 8px;
+        justify-content:flex-end;
+        min-width:0;
+    }
 }
 
 @media(prefers-reduced-motion:reduce) {
@@ -427,5 +434,6 @@ footer {
     }
 
 }
+
 
 
