@@ -14,4 +14,4 @@ This repo hosts my **personal portfolio website**.
 
 ## 📧 Contact
 - Email: [18anand11@gmail.com](mailto:18anand11@gmail.com)
-- LinkedIn: [linkedin.com/in/USERNAME](#)
+- LinkedIn: www.linkedin.com/in/anand-kumar1811
